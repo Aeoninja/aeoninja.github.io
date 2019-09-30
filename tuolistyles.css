@@ -1,5 +1,10 @@
-h1{color:yellow; background-color:black; font-family:'Comic Sans MS';}
+h1{
+	color:yellow; 
+	background-color:black; 
+	font-family:'Comic Sans MS';
+}
 table, th, td {
   border: 2px solid black;
   border-collapse: collapse;
+  text-align:center;
 }
