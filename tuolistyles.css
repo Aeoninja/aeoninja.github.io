@@ -6,6 +6,7 @@ h1{
 table, th, td {
   border: 2px solid black;
   border-collapse: collapse;
+  background-image: radial-gradient(red, yellow, green);
 }
 body
 {
