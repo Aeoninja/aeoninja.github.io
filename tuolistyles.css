@@ -7,3 +7,8 @@ table, th, td {
   border: 2px solid black;
   border-collapse: collapse;
 }
+body
+{
+background-image:url("taustatuoli.png");
+background-repeat:repeat;
+}
