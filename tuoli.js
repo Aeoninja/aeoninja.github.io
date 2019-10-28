@@ -13,13 +13,14 @@ function isScrolledIntoView(el) {
 //Loops through all elements, fading each in or out based on visibility
 function fadeOnView()  {
 	document.querySelectorAll('body *').forEach(function(node){
-		if (node.style.opacity < 1 && isScrolledIntoView(node)){
-			$(node).fadeIn();
+		if (isScrolledIntoView(node)){
+			$(node).fadeIn(5000);
 		}
-		else if (node.style.opacity > 0 && !isScrolledIntoView(node)){
-			$(node).fadeOut();
+		else if (!isScrolledIntoView(node)){
+			$(node).fadeOut(5000);
 		}
 	})
 }
 //triggering fade when user scrolls the page
-window.onscroll = fadeOnView();
+window.addEventListener("scroll", fadeOnView());
+//window.onscroll = $("#fadeTest").fadeToggle();
