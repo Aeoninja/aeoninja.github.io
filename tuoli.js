@@ -7,18 +7,12 @@ else
 }
 function DisplayResult(Position)
 {
-	/*var message = " Latitude: " + Position.coords.latitude;
+	var message = " Latitude: " + Position.coords.latitude;
 	message += " Longitude: " + Position.coords.longitude;
 	message += " Accuracy: " + Position.coords.accuracy + " meters ";
-	alert(message);*/
+	alert(message);
 
 	var context = document.getElementById('mapCanvas').getContext("2d");	
-
-	var img = new Image();
-	img.onload = function () {
-    context.drawImage(img, 0, 0);
-	}
-	img.src = "kartta.jpg";
 	
 	var img = new Image();
 	img.onload = function () {
@@ -35,7 +29,7 @@ function DisplayResult(Position)
 	}else{
 		Ycor = 180 - (Ylatitude * 2);
 	}
-	if (Xlongitude < 0){
+	if (Xlongitude > 0){
 		Xcor = 360 + (Xlongitude * 2);
 	}else{
 		Xcor = 360 - (Xlongitude * 2);
@@ -63,20 +57,21 @@ function DisplayError(Error)
 }
 function ValidateForm()
 {
-if (document.forms["myForm"]["name"].value==null || document.forms["myForm"]["name"].value=="")
+if (document.forms["tuoliForm"]["name"].value==null || document.forms["tuoliForm"]["name"].value=="")
 {
 alert("Name must be filled out");
 return false;
 }
-if (document.forms["myForm"]["phone"].value==null || document.forms["myForm"]["phone"].value=="")
+if (document.forms["tuoliForm"]["parastuoli"].value==null || document.forms["tuoliForm"]["parastuoli"].value=="")
 {
-alert("Phone must be filled out");
+alert("parastuoli must be filled out");
 return false;
 }
-if (document.forms["myForm"]["email"].value==null || document.forms["myForm"]["email"].value=="")
+if (document.forms["tuoliForm"]["huonointuoli"].value==null || document.forms["tuoliForm"]["huonointuoli"].value=="")
 {
-alert("Email must be filled out");
+alert("huonointuoli must be filled out");
 return false;
 }
+alert("kiitox");
 return true;
 }
