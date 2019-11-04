@@ -61,3 +61,22 @@ function DisplayError(Error)
 	}
 	alert(Message);
 }
+function ValidateForm()
+{
+if (document.forms["myForm"]["name"].value==null || document.forms["myForm"]["name"].value=="")
+{
+alert("Name must be filled out");
+return false;
+}
+if (document.forms["myForm"]["phone"].value==null || document.forms["myForm"]["phone"].value=="")
+{
+alert("Phone must be filled out");
+return false;
+}
+if (document.forms["myForm"]["email"].value==null || document.forms["myForm"]["email"].value=="")
+{
+alert("Email must be filled out");
+return false;
+}
+return true;
+}
