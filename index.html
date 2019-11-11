@@ -8,7 +8,10 @@
 img.center{ display:block; margin-left:auto; margin-right:auto;}
 </style>
 <script src ="tuoli.js"></script>
-<title>Hello</title>
+<title>Tuoli and tuoli accessories</title>
+<meta name="description" content="Maailman best tuoli information site of all aika">
+<meta name="keywords" content="tuoli,rahi,chair,sängynpääty,nojatuoli,jakkara">
+<meta name="author" content="Aino Hirvelä,Veli-Matti Koskikallio">
 </head>
 <body onload="ShowPosition()">
 <canvas id="mapCanvas" width="720" height="360" style="border: 2px solid red;">
@@ -21,7 +24,7 @@ img.center{ display:block; margin-left:auto; margin-right:auto;}
 <li>Kannettavuus</li>
 <li>Kannattavuus</li>
 </ol>
-<img id="fadeTest" src="epictuoli.jpg"/>
+<img src="epictuoli.jpg" alt="Epic tuoli"/>
 <p class="meme" style="font-size:100px">KUN TUOLI ON HYVÄ</p>
 <table style="width:75%">
 <tr>
@@ -30,17 +33,17 @@ img.center{ display:block; margin-left:auto; margin-right:auto;}
 <th>Score</th>
 </tr>
 <tr>
-<td><img class="center"src="uusituoli.jpg"/></td>
+<td><img class="center" src="uusituoli.jpg" alt="Uusi tuoli"/></td>
 <td class="center">Kauppatuoli</td>
 <td class="center">Liian uusi. 3/5 tuolipistettä</td>
 </tr>
 <tr>
-<td><img class="center" src="valtatuoli.png"/></td>
+<td><img class="center" src="valtatuoli.png" alt="Valta tuoli"/></td>
 <td class="center">Kihotuoli</td>
 <td class="center">Aivan hävytöntä. 0/5 tuolipistettä</td>
 </tr>
 <tr>
-<td><img class="center" src="mukavatuoli.jpg"/></td>
+<td><img class="center" src="mukavatuoli.jpg" alt="Mukava tuoli"/></td>
 <td class="center">Elotuoli</td>
 <td class="center">Tuoli, jossa on istuttu. 5/5 tuolipistettä</td>
 </tr>
@@ -52,9 +55,9 @@ Huonointuoli: <input type="text" name="huonointuoli" /><br/>
 <input type="submit" value="Click to Submit" />
 </form>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hePwWjV5PEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-<img id="drag1" src="valtatuoli.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag1" src="valtatuoli.png" draggable="true" ondragstart="drag(event)" width="69" height="69" alt="dräggäble tuoli"></div>
+
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 </body>
 </html>
